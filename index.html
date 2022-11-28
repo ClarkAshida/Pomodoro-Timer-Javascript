@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9e8ee8a085.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+  <h1>Pomodoro App</h1>
+  </header>
+
+  <main>
+    <div class="pomodoro-container">
+    <div id="mode-buttons">
+        <span id="workTime">Pomodoro</span>
+        <span id="breakTime">Short Break</span>
+      </div>
+      
+      <div id="timer-container">
+        <span id="minutes">25</span>
+        <span id="dot">:</span>
+        <span id="seconds">00</span>
+        </div>
+      <div id="timer-buttons">
+      <button id="btn-start" onclick = "start()">START</i></button>
+      <button id="btn-resume" onclick= "resume()">START</i></button>
+      <button id="btn-pause" onclick = "pause()">PAUSE</i></button>
+      <button id="btn-reset" onclick = "reset()"><i class="fa-solid fa-forward-step"></i></button>
+      </div>
+    </div>
+    </main>
+
+    <section class="controls">
+      <div class="controls-container">
+
+        <div class="controls-name">
+        <span>Pomodoro</span>
+        <span>Short Break</span>
+      </div>
+
+      <div class="controls-timer">
+        <p class="increment" onclick="incrementWorkTime()">+</p>
+        <span>25</span>
+        <p class="decrement" onclick="decrementWorkTime()">-</p>
+        <span class="space">.</span>
+        <p class="increment" onclick="incrementBreakTime()">+</p>
+        <span>5</span>
+        <p class="decrement" onclick="decrementBreakTime()">-</p>
+      </div>
+
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
